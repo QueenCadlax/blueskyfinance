@@ -32,7 +32,7 @@ export function Requirements() {
           description="Bring these documents to your branch visit or have digital copies ready for a quick verification."
         />
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid grid-cols-2 gap-6 lg:grid-cols-4">
           {REQUIREMENTS.map((req, i) => (
             <Reveal key={req.label} delay={i * 60}>
               <MotionDiv hover delay={i * 0.08} className="relative flex min-h-[170px] flex-col gap-4 rounded-3xl border border-gold-soft bg-gradient-to-br from-white/60 to-background/60 p-5 shadow-soft card-hover">
