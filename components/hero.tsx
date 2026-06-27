@@ -12,16 +12,18 @@ import {
   waLink,
 } from '@/lib/site'
 import { motion, useReducedMotion } from 'framer-motion'
-import { MotionDiv } from './motion'
 
 export function Hero() {
   const shouldReduceMotion = useReducedMotion()
 
   return (
-    <section
+    <motion.section
       id="home"
       className="relative overflow-hidden bg-secondary pt-16"
       aria-label="Hero"
+      initial={shouldReduceMotion ? undefined : { opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={shouldReduceMotion ? { duration: 0 } : { duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
     >
       {/* Background image of employee + building */}
       <div className="absolute inset-0 z-0">
@@ -31,28 +33,30 @@ export function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[50%_12%] sm:object-[50%_10%] md:object-[48%_08%] lg:object-[52%_08%]"
+          className="object-cover object-[50%_12%] sm:object-[70%_20%] md:object-[74%_20%] lg:object-[52%_08%]"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/0 via-background/10 to-background/6 md:via-background/20 md:to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent md:from-background/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/0 via-background/10 to-background/6 lg:via-background/20 lg:to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent lg:from-background/30" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-full max-w-[42rem] bg-gradient-to-r from-white/96 via-white/80 to-transparent lg:hidden" />
+        <div className="pointer-events-none absolute inset-0 bg-slate-950/10 lg:hidden" />
       </div>
 
-      <div className="pointer-events-none absolute inset-y-0 left-0 hidden w-full max-w-3xl bg-gradient-to-r from-slate-950/85 via-slate-950/15 to-transparent md:block" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 hidden w-full max-w-3xl bg-gradient-to-r from-slate-950/85 via-slate-950/15 to-transparent lg:block" />
 
-      <MotionDiv x={-18} delay={0.05} className="relative z-10 mx-auto grid max-w-7xl gap-8 px-4 pb-14 pt-10 sm:px-6 lg:grid-cols-[1.05fr_minmax(0,460px)] lg:gap-6 lg:px-8 lg:pb-20 lg:pt-16">
+      <div className="relative z-10 mx-auto grid max-w-7xl gap-8 px-4 pb-14 pt-10 sm:px-6 lg:grid-cols-[1.05fr_minmax(0,460px)] lg:gap-6 lg:px-8 lg:pb-20 lg:pt-16">
         {/* Copy */}
-        <div className="max-w-xl">
+        <div className="max-w-xl rounded-[2rem] bg-white/95 p-6 shadow-[0_30px_80px_-40px_rgba(15,23,42,0.12)] ring-1 ring-slate-200/70 md:bg-transparent md:p-0 md:shadow-none md:ring-0">
           <div className="flex items-center gap-3">
             <OpenStatus />
           </div>
 
-          <h1 className="mt-5 font-heading text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground text-balance sm:text-5xl lg:text-6xl">
+          <h1 className="mt-5 font-heading text-3xl font-extrabold leading-tight tracking-tight text-slate-950 text-balance sm:text-4xl lg:text-6xl">
             A Helping Hand
             <br />
             <span className="text-primary">You Can Count On</span>
           </h1>
 
-          <p className="mt-5 max-w-md text-base leading-relaxed text-slate-100 sm:text-lg">
+          <p className="mt-5 max-w-md text-base leading-relaxed text-slate-950 sm:text-lg md:text-slate-100">
             Responsible short-term loans from{' '}
             <span className="font-semibold text-orange-500">
               {formatRand(COMPANY.loanMin)}
@@ -73,7 +77,7 @@ export function Hero() {
               <LinkButton
                 external
                 href={waLink(DEFAULT_WA_MESSAGE)}
-                className="h-auto rounded-full bg-[#25D366] py-3 text-base font-semibold text-white hover:bg-[#1fb855]"
+                className="h-auto rounded-full bg-[#25D366] py-3 text-sm font-semibold text-white hover:bg-[#1fb855] sm:text-base"
               >
                 <MessageCircle className="h-5 w-5" aria-hidden="true" />
                 Apply on WhatsApp
@@ -86,7 +90,7 @@ export function Hero() {
               <LinkButton
                 variant="outline"
                 href="#contact"
-                className="h-auto rounded-full border-primary/30 bg-background/80 py-3 text-base font-semibold text-primary backdrop-blur hover:bg-primary hover:text-primary-foreground"
+                className="h-auto rounded-full border-primary/30 bg-background/80 py-3 text-sm font-semibold text-primary backdrop-blur hover:bg-primary hover:text-primary-foreground sm:text-base"
               >
                 <MapPin className="h-5 w-5" aria-hidden="true" />
                 Visit Our Branches
