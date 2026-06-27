@@ -46,7 +46,7 @@ export function Hero() {
             <OpenStatus />
           </div>
 
-          <h1 className="mt-5 font-heading text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground text-balance sm:text-5xl lg:text-6xl">
+          <h1 className="mt-5 font-heading text-3xl font-extrabold leading-[1.05] tracking-tight text-foreground text-balance sm:text-4xl md:text-5xl lg:text-6xl">
             A Helping Hand
             <br />
             <span className="text-primary">You Can Count On</span>
@@ -64,9 +64,8 @@ export function Hero() {
               <span className="font-semibold text-orange-500">
                 {formatRand(COMPANY.loanMax)}
               </span>{' '}
-              with fast approvals,
-              <span className="block sm:hidden" />
-              transparent fees and friendly local service.
+              <span className="block sm:inline">with fast approvals,</span>{' '}
+              <span className="block sm:inline">transparent fees and friendly local service.</span>
             </p>
           </div>
 
