@@ -8,7 +8,7 @@ export function Logo({
   className?: string
   variant?: 'default' | 'light'
 }) {
-  const wordmark = variant === 'light' ? 'text-white' : 'text-foreground'
+  const wordmark = variant === 'light' ? 'text-white' : 'text-primary'
   const sub = variant === 'light' ? 'text-white/70' : 'text-primary'
 
   return (
@@ -29,14 +29,9 @@ export function Logo({
             wordmark,
           )}
         >
-          BLUE<span className="text-primary">SKY</span>
+          BLUESKY
         </span>
-        <span
-          className={cn(
-            'text-[9px] font-semibold uppercase tracking-[0.18em]',
-            sub,
-          )}
-        >
+        <span className="text-[9px] font-semibold uppercase tracking-[0.18em] text-accent-orange">
           Financial Services
         </span>
       </span>

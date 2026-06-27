@@ -8,7 +8,7 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-10 lg:grid-cols-4">
           <div className="lg:col-span-2">
-            <Logo variant="light" />
+            <Logo />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-background/60">
               {COMPANY.legalName} is a registered credit provider offering
               quick, responsible loans to help you when you need it most. A
