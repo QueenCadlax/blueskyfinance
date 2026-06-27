@@ -1,12 +1,18 @@
-import type { MetadataRoute } from 'next'
-
-const SITE_URL = 'https://blueskyfinancialservices.co.za'
-
-const PAGES = ['/', '/privacy-policy', '/terms-and-conditions']
+import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return PAGES.map((path) => ({
-    url: `${SITE_URL}${path}`,
-    lastModified: new Date(),
-  }))
+  return [
+    {
+      url: 'https://www.blueskyfinance.co.za/',
+      lastModified: new Date(),
+    },
+    {
+      url: 'https://www.blueskyfinance.co.za/privacy-policy',
+      lastModified: new Date(),
+    },
+    {
+      url: 'https://www.blueskyfinance.co.za/terms-and-conditions',
+      lastModified: new Date(),
+    },
+  ]
 }
