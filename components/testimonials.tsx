@@ -36,7 +36,7 @@ export function Testimonials() {
       <div className="relative mx-auto max-w-7xl">
         <SectionHeading eyebrow="What Our Customers Say" title="Trusted by borrowers across Lydenburg" />
 
-        <div className="mt-12 grid gap-5 grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {TESTIMONIALS.map((t) => (
             <article key={t.name} className="rounded-[1.75rem] border border-slate-200/70 bg-slate-50 p-5 shadow-[0_18px_50px_-30px_rgba(15,23,42,0.14)]">
               <div className="flex items-center justify-between gap-3 text-orange-500">

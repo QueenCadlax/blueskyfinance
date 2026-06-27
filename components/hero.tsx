@@ -23,22 +23,8 @@ export function Hero() {
       className="relative overflow-hidden bg-secondary pt-16"
       aria-label="Hero"
     >
-      {/* Mobile / tablet hero image appears above the copy */}
-      <div className="relative z-0 lg:hidden h-[420px] sm:h-[480px]">
-        <Image
-          src="/hero 4.png"
-          alt="A friendly BlueSky Financial Services consultant standing outside a modern branch in Lydenburg"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-[70%_20%] sm:object-[65%_18%]"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-sky-50/95 via-sky-50/80 to-transparent" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(240,249,255,0.96),rgba(226,242,255,0.24)_35%,transparent_80%)]" />
-      </div>
-
-      {/* Desktop background image stays behind the hero content */}
-      <div className="absolute inset-0 z-0 hidden lg:block">
+      {/* Background image of employee + building */}
+      <div className="absolute inset-0 z-0">
         <Image
           src="/hero 4.png"
           alt="A friendly BlueSky Financial Services consultant standing outside a modern branch in Lydenburg"
