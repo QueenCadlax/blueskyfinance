@@ -26,12 +26,12 @@ export function Hero() {
       {/* Background image of employee + building */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/hero 4.png"
+          src="/hero-employee.png"
           alt="A friendly BlueSky Financial Services consultant standing outside a modern branch in Lydenburg"
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[70%_15%] sm:object-[62%_14%] md:object-[55%_15%] lg:object-[50%_15%]"
+          className="object-cover object-[50%_15%]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/0 via-background/10 to-background/6 md:via-background/20 md:to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent md:from-background/30" />
