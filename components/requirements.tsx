@@ -26,7 +26,7 @@ export function Requirements() {
 
         <div className="mt-12 grid gap-6 lg:grid-cols-[1.3fr_0.9fr]">
           <div className="rounded-[2rem] border border-slate-200/80 bg-white/95 p-8 shadow-[0_36px_80px_-48px_rgba(15,23,42,0.16)]">
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-4 grid-cols-2 lg:grid-cols-3">
               {REQUIREMENTS.map((req, i) => (
                 <Reveal key={req.label} delay={i * 60}>
                   <MotionDiv

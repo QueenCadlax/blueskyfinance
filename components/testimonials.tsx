@@ -87,7 +87,7 @@ export function Testimonials() {
 
         <div className="relative mt-12 overflow-hidden rounded-[2.5rem] border border-slate-200/70 bg-orange-50/90 p-6 shadow-[0_30px_90px_-40px_rgba(15,23,42,0.18)] sm:p-8">
           <div
-            className="flex w-[300%] transition-transform duration-700 ease-out sm:w-auto"
+            className="flex w-full transition-transform duration-700 ease-out"
             style={{
               transform: `translateX(-${index * 100}%)`,
               transition: shouldReduceMotion ? 'none' : 'transform 0.7s ease',
@@ -96,7 +96,7 @@ export function Testimonials() {
             onMouseLeave={() => setIsPaused(false)}
           >
             {TESTIMONIALS.map((t) => (
-              <article key={t.name} className="min-h-[320px] w-full shrink-0 px-3 py-6 sm:px-6 sm:py-8 lg:px-10">
+              <article key={t.name} className="min-h-[320px] min-w-full shrink-0 px-3 py-6 sm:px-6 sm:py-8 lg:px-10">
                 <div className="mx-auto flex h-full max-w-4xl flex-col justify-between rounded-[2rem] bg-slate-50 p-8 shadow-[0_20px_60px_-30px_rgba(15,23,42,0.12)] ring-1 ring-slate-200/80">
                   <div>
                     <div className="flex flex-col gap-3 text-orange-500">
