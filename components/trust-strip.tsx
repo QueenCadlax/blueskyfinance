@@ -9,11 +9,6 @@ import {
 import { Reveal } from '@/components/reveal'
 import { COMPANY } from '@/lib/site'
 
-interface TrustStripProps {
-  className?: string
-  overlay?: boolean
-}
-
 const ITEMS = [
   { icon: ShieldCheck, title: 'NCR Registered', sub: COMPANY.ncr },
   { icon: BadgeCheck, title: 'SACRRA Registered', sub: COMPANY.sacrra },
@@ -23,15 +18,10 @@ const ITEMS = [
   { icon: Building2, title: 'Local Lydenburg Branches', sub: 'Close to you' },
 ]
 
-export function TrustStrip({ className, overlay }: TrustStripProps) {
+export function TrustStrip() {
   return (
-    <section
-      className={`relative z-10 ${overlay ? 'mt-0 px-0 sm:px-0' : '-mt-6 px-4 sm:px-6 lg:px-8'} ${className ?? ''}`}
-      aria-label="Trust signals"
-    >
-      <Reveal
-        className={`mx-auto max-w-7xl rounded-3xl border border-border bg-card p-4 shadow-soft-lg sm:p-6 ${overlay ? 'bg-white/95 shadow-2xl' : ''}`}
-      >
+    <section className="relative z-10 -mt-6 px-4 sm:px-6 lg:px-8" aria-label="Trust signals">
+      <Reveal className="mx-auto max-w-7xl rounded-3xl border border-border bg-card p-4 shadow-soft-lg sm:p-6">
         <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
           {ITEMS.map((item) => (
             <li

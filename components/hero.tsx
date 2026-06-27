@@ -5,7 +5,6 @@ import { MapPin, MessageCircle, ShieldCheck } from 'lucide-react'
 import { LinkButton } from '@/components/link-button'
 import { LoanCalculator } from '@/components/loan-calculator'
 import { OpenStatus } from '@/components/open-status'
-import { TrustStrip } from '@/components/trust-strip'
 import {
   COMPANY,
   DEFAULT_WA_MESSAGE,
@@ -105,10 +104,6 @@ export function Hero() {
         {/* Placeholder column (calculator moved to its own section) */}
         <div className="hidden lg:block" />
       </MotionDiv>
-
-      <div className="absolute inset-x-4 bottom-4 z-20 lg:hidden">
-        <TrustStrip overlay className="rounded-[2rem] border border-border shadow-2xl" />
-      </div>
     </section>
   )
 }

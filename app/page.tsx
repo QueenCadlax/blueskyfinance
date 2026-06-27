@@ -86,9 +86,7 @@ export default function Home() {
       <Navbar />
       <main className="pb-16 lg:pb-0">
         <Hero />
-        <div className="hidden lg:block">
-          <TrustStrip />
-        </div>
+        <TrustStrip />
         <LoanCalculatorSection />
         <LoanProducts />
         <Requirements />
