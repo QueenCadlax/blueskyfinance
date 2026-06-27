@@ -36,10 +36,10 @@ export function Testimonials() {
       <div className="relative mx-auto max-w-7xl">
         <SectionHeading eyebrow="What Our Customers Say" title="Trusted by borrowers across Lydenburg" />
 
-        <div className="mt-10 grid grid-cols-3 gap-4">
+        <div className="mt-12 grid gap-5 grid-cols-2 lg:grid-cols-3">
           {TESTIMONIALS.map((t) => (
-            <article key={t.name} className="rounded-[1.75rem] border border-slate-200/70 bg-slate-50 p-4 shadow-[0_18px_50px_-30px_rgba(15,23,42,0.14)]">
-              <div className="flex items-center justify-between gap-2 text-orange-500">
+            <article key={t.name} className="rounded-[1.75rem] border border-slate-200/70 bg-slate-50 p-5 shadow-[0_18px_50px_-30px_rgba(15,23,42,0.14)]">
+              <div className="flex items-center justify-between gap-3 text-orange-500">
                 <div className="flex items-center gap-1 text-orange-400">
                   {Array.from({ length: 5 }).map((_, starIndex) => (
                     <Star key={starIndex} className="h-3.5 w-3.5 text-orange-400 fill-current" aria-hidden="true" />
@@ -49,14 +49,14 @@ export function Testimonials() {
                   Verified customer
                 </span>
               </div>
-              <blockquote className="mt-4 text-xs leading-5 text-slate-900 sm:text-sm sm:leading-6">
+              <blockquote className="mt-4 text-sm leading-6 text-slate-900 sm:text-base">
                 “{t.quote}”
               </blockquote>
-              <figcaption className="mt-4 flex items-center gap-2 border-t border-slate-200/70 pt-3">
-                <Image src={t.image} alt={t.name} width={44} height={44} className="h-10 w-10 rounded-full object-cover" />
+              <figcaption className="mt-5 flex items-center gap-3 border-t border-slate-200/70 pt-4">
+                <Image src={t.image} alt={t.name} width={48} height={48} className="h-11 w-11 rounded-full object-cover" />
                 <div>
                   <p className="text-sm font-semibold text-slate-950">{t.name}</p>
-                  <p className="text-[9px] uppercase tracking-[0.3em] text-slate-500">{t.place}</p>
+                  <p className="text-[10px] uppercase tracking-[0.3em] text-slate-500">{t.place}</p>
                 </div>
               </figcaption>
             </article>
