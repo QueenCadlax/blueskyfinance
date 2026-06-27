@@ -34,8 +34,9 @@ export function Navbar() {
       )}
     >
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="#home" aria-label="BlueSky Financial Services home">
+        <a href="#home" aria-label="BlueSky Financial Services home" className="flex items-center gap-3">
           <Logo />
+          <span className="text-sm font-semibold text-foreground">BlueSky Financial Services</span>
         </a>
 
         <ul className="hidden items-center gap-1 lg:flex">
