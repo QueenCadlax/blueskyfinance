@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default:
-      'BlueSky Financial Services | Fast Cash & Personal Loans in Lydenburg',
+      'Bluesky Finance | Fast Loans in South Africa',
     template: '%s | BlueSky Financial Services',
   },
   description:
-    'Licensed fast cash loans in Lydenburg from R350 to R8,000 with transparent fees, quick WhatsApp support, and trusted local service.',
+    'NCR Registered Credit Provider offering fast, reliable financial services and short-term loans in South Africa.',
   keywords: [
     'Lydenburg loans',
     'cash loans Lydenburg',

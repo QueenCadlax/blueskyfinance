@@ -15,6 +15,7 @@ import { SiteFooter } from '@/components/site-footer'
 import { MobileActionBar } from '@/components/mobile-action-bar'
 import { FloatingWhatsAppButton } from '@/components/floating-whatsapp'
 import { BRANCHES, COMPANY } from '@/lib/site'
+import { structuredData } from './structured-data'
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -109,6 +110,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <Navbar />
       <main className="pb-16 lg:pb-0">
