@@ -30,7 +30,7 @@ const STEPS = [
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="relative overflow-hidden bg-slate-50 px-4 py-14 sm:px-6 lg:px-8 lg:py-20 border-t border-orange-200/40">
+    <section id="how-it-works" className="relative overflow-hidden bg-slate-50 px-4 py-12 sm:px-6 lg:px-8 lg:py-16 border-t border-orange-200/40">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-64 bg-[radial-gradient(circle_at_top,rgba(251,191,36,0.16),transparent_55%)] blur-3xl" />
       <div className="relative mx-auto max-w-7xl">
         <SectionHeading

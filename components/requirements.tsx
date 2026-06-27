@@ -14,7 +14,7 @@ const REQUIREMENTS = [
 
 export function Requirements() {
   return (
-    <section className="relative overflow-hidden bg-slate-50 px-4 py-14 sm:px-6 lg:px-8 lg:py-20 border border-orange-200/40 ring-1 ring-orange-50">
+    <section className="relative overflow-hidden bg-slate-50 px-4 py-12 sm:px-6 lg:px-8 lg:py-16 border border-orange-200/40 ring-1 ring-orange-50">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-72 bg-[radial-gradient(circle_at_top,rgba(251,191,36,0.18),transparent_55%)] blur-3xl" />
       <div className="relative mx-auto max-w-6xl">
         <SectionHeading

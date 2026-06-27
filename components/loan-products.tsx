@@ -31,7 +31,7 @@ const PRODUCTS = [
 
 export function LoanProducts() {
   return (
-    <section id="loans" className="relative overflow-hidden px-4 py-14 sm:px-6 lg:px-8 lg:py-20 border-t border-orange-200/80 bg-orange-50/90 backdrop-blur-sm">
+    <section id="loans" className="relative overflow-hidden px-4 py-12 sm:px-6 lg:px-8 lg:py-16 border-t border-orange-200/80 bg-orange-50/90 backdrop-blur-sm">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-64 bg-[radial-gradient(circle_at_top,rgba(248,181,0,0.18),transparent_55%)] blur-3xl" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-56 bg-[radial-gradient(circle_at_bottom,rgba(248,181,0,0.20),transparent_50%)] blur-3xl" />
       <div className="relative mx-auto max-w-7xl">

@@ -26,7 +26,7 @@ const REASONS = [
 
 export function WhyChoose() {
   return (
-    <section id="why-us" className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-slate-100 to-white px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+    <section id="why-us" className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-slate-100 to-white px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-72 bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.12),transparent_55%)] blur-3xl" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-56 bg-[radial-gradient(circle_at_bottom,rgba(56,189,248,0.08),transparent_50%)] blur-3xl" />
       <div className="relative mx-auto max-w-7xl">

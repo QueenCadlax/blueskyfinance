@@ -15,7 +15,7 @@ const TIERS = [
 
 export function Referral() {
   return (
-    <section className="px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+    <section className="px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
       <Reveal className="mx-auto max-w-7xl overflow-hidden rounded-[2.5rem] border border-orange-100/70 bg-gradient-to-br from-white via-orange-50 to-orange-100 p-6 shadow-[0_30px_90px_-40px_rgba(15,23,42,0.18)] sm:p-10">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <div>

@@ -30,7 +30,7 @@ const TESTIMONIALS = [
 
 export function Testimonials() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-orange-50 via-orange-100 to-orange-50 px-4 py-10 sm:px-6 lg:px-8 lg:py-14" aria-label="Customer testimonials">
+    <section className="relative overflow-hidden bg-gradient-to-b from-orange-50 via-orange-100 to-orange-50 px-4 py-8 sm:px-6 lg:px-8 lg:py-12" aria-label="Customer testimonials">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-36 bg-[radial-gradient(circle_at_top,rgba(249,115,22,0.12),transparent_60%)] blur-3xl" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-[radial-gradient(circle_at_bottom,rgba(249,115,22,0.08),transparent_60%)] blur-3xl" />
       <div className="relative mx-auto max-w-7xl">
