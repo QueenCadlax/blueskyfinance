@@ -4,6 +4,7 @@ import { TrustStrip } from '@/components/trust-strip'
 import { LoanProducts } from '@/components/loan-products'
 import { LoanCalculatorSection } from '@/components/loan-calculator-section'
 import { Requirements } from '@/components/requirements'
+const SITE_URL = 'https://blueskyfinancialservices.co.za'
 import { HowItWorks } from '@/components/how-it-works'
 import { Referral } from '@/components/referral'
 import { WhyChoose } from '@/components/why-choose'
@@ -18,12 +19,21 @@ import { BRANCHES, COMPANY } from '@/lib/site'
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FinancialService',
+  '@id': `${SITE_URL}/#financialservice`,
   name: COMPANY.legalName,
   description:
-    'Fast approvals. Transparent fees. Friendly local service.',
+    'Licensed fast cash loans in Lydenburg from R350 to R8,000 with transparent fees, quick WhatsApp support, and trusted local service.',
   email: COMPANY.email,
   telephone: '+27' + COMPANY.officePhone.replace(/\D/g, '').replace(/^0/, ''),
   areaServed: 'Lydenburg, Mpumalanga, South Africa',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: BRANCHES[0].address.slice(0, -1).join(', '),
+    addressLocality: 'Lydenburg',
+    postalCode: '1120',
+    addressCountry: 'ZA',
+  },
+  sameAs: [SITE_URL],
   priceRange: 'R350 - R8,000',
   currenciesAccepted: 'ZAR',
   location: BRANCHES.map((b) => ({
@@ -72,6 +82,19 @@ const faqLd = {
   ],
 }
 
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: SITE_URL,
+    },
+  ],
+}
+
 export default function Home() {
   return (
     <>
@@ -82,6 +105,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
       <Navbar />
       <main className="pb-16 lg:pb-0">

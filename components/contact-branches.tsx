@@ -144,7 +144,7 @@ export function ContactBranches() {
                     <p className="text-xs uppercase tracking-[0.35em] text-orange-600">
                       Email Us
                     </p>
-                    <p className="mt-1 truncate text-lg font-semibold text-slate-900">
+                    <p className="mt-1 break-words text-sm font-semibold leading-6 text-slate-900">
                       {COMPANY.email}
                     </p>
                   </div>

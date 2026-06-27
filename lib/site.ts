@@ -5,7 +5,7 @@ export const COMPANY = {
   ncr: 'NCRCP19207',
   reg: '2023/928618/07',
   sacrra: 'XY4088',
-  email: 'blueskyfinancialservices1@gmail.com',
+  email: 'info@skybluefinance.co.za',
   officePhone: '062 339 2150',
   loanMin: 350,
   loanMax: 8000,

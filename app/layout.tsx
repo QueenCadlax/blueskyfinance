@@ -20,29 +20,33 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default:
-      'BlueSky Financial Services | Personal & Cash Loans in Lydenburg',
+      'BlueSky Financial Services | Fast Cash & Personal Loans in Lydenburg',
     template: '%s | BlueSky Financial Services',
   },
   description:
-    'Fast approvals. Transparent fees. Friendly local service.',
+    'Licensed fast cash loans in Lydenburg from R350 to R8,000 with transparent fees, quick WhatsApp support, and trusted local service.',
   keywords: [
-    'Loans Lydenburg',
-    'Personal Loans Lydenburg',
-    'Cash Loans Lydenburg',
-    'Payday Loans Lydenburg',
-    'Emergency Loans Lydenburg',
-    'Registered Credit Provider Lydenburg',
-    'WhatsApp Loans South Africa',
+    'Lydenburg loans',
+    'cash loans Lydenburg',
+    'personal loans Lydenburg',
+    'short-term loans Lydenburg',
+    'NCR registered credit provider',
+    'WhatsApp loan application',
+    'emergency cash loan South Africa',
+    'local loan branch Lydenburg',
   ],
+  alternates: {
+    canonical: SITE_URL,
+  },
   authors: [{ name: 'BlueSky Financial Services (Pty) Ltd' }],
   generator: 'v0.app',
   openGraph: {
     type: 'website',
     locale: 'en_ZA',
     url: SITE_URL,
-    title: 'BlueSky Financial Services | A Helping Hand You Can Count On',
+    title: 'BlueSky Financial Services | Fast Cash & Personal Loans in Lydenburg',
     description:
-      'Fast approvals. Transparent fees. Friendly local service.',
+      'Licensed fast cash loans in Lydenburg from R350 to R8,000 with transparent fees, quick WhatsApp support, and trusted local service.',
     siteName: 'BlueSky Financial Services',
     images: [
       {
@@ -54,16 +58,17 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BlueSky Financial Services | A Helping Hand You Can Count On',
+    title: 'BlueSky Financial Services | Fast Cash & Personal Loans in Lydenburg',
     description:
-      'Fast approvals. Transparent fees. Friendly local service.',
+      'Licensed fast cash loans in Lydenburg from R350 to R8,000 with transparent fees, quick WhatsApp support, and trusted local service.',
     images: [`${SITE_URL}/hero-employee.png`],
   },
   icons: {
-    icon: '/icon.svg',
-    shortcut: '/icon.svg',
-    apple: '/icon.svg',
+    icon: '/favicon_io/favicon.ico',
+    shortcut: '/favicon_io/favicon-32x32.png',
+    apple: '/favicon_io/apple-touch-icon.png',
   },
+  manifest: '/favicon_io/site.webmanifest',
   robots: { index: true, follow: true },
 }
 
