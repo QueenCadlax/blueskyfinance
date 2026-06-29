@@ -54,9 +54,7 @@ export function Hero() {
 
           <div className="mt-5 max-w-[18rem] rounded-3xl bg-sky-100/90 px-4 py-4 text-base leading-relaxed text-slate-950 sm:max-w-md sm:text-lg">
             <p>
-              Responsible short-term loans
-              <span className="block sm:hidden" />
-              from{' '}
+              Responsible short-term loans from{' '}
               <span className="font-semibold text-orange-500">
                 {formatRand(COMPANY.loanMin)}
               </span>{' '}

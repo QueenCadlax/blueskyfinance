@@ -128,9 +128,12 @@ export function ContactBranches() {
                     <p className="text-xs uppercase tracking-[0.35em] text-orange-600">
                       Call Main Office
                     </p>
-                    <p className="mt-1 text-lg font-semibold text-slate-900">
+                    <a
+                      href={telLink(COMPANY.officePhone)}
+                      className="mt-1 block text-lg font-semibold text-slate-900 transition hover:text-orange-700"
+                    >
                       {COMPANY.officePhone}
-                    </p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -144,9 +147,12 @@ export function ContactBranches() {
                     <p className="text-xs uppercase tracking-[0.35em] text-orange-600">
                       Email Us
                     </p>
-                    <p className="mt-1 break-words text-sm font-semibold leading-6 text-slate-900">
+                    <a
+                      href={`mailto:${COMPANY.email}`}
+                      className="mt-1 block break-words text-sm font-semibold leading-6 text-slate-900 transition hover:text-orange-700"
+                    >
                       {COMPANY.email}
-                    </p>
+                    </a>
                   </div>
                 </div>
               </div>
